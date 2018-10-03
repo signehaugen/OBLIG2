@@ -1,0 +1,38 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+            "header header header"
+            "introimage introimage introtext"
+            "main main main"
+            "footer footer footer";
+    grid-gap: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    grid-area: "header";
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 20px;
+}
+
+.introimage {
+    grid-area: "introimange";
+}
+
+.introtext {
+    grid-area: "introtext";
+}
+
+main {
+    grid-area: "main";
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+footer {
+    grid-area: "footer";
+}
